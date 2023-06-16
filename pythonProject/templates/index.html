@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grafico a torta</title>
+</head>
+<body>
+    <h1>Grafico a torta</h1>
+    <img src="{{ image_path }}" alt="Grafico a torta">
+    <p>Totale degli stipendi: {{ total_stipendio }}</p>
+    <ol>{% for x in max_pr %}
+ <li>{{ x }}</li>
+{% endfor%}
+</ol>
+
+</body>
+</html>
+
+

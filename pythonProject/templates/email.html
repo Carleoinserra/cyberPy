@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Accesso protetto</title>
+</head>
+<body>
+  <h1>Accesso protetto</h1>
+
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" value="{{ username }}" readonly><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" value="{{ password }}" readonly><br><br>
+
+    <input type="button" value="Stampa in Console" onclick="stampaDati()">
+  </form>
+
+  <script>
+    function stampaDati() {
+      var username = document.getElementById('username').value;
+      var password = document.getElementById('password').value;
+
+      console.log("Username:", username);
+      console.log("Password:", password);
+    }
+  </script>
+</body>
+</html>

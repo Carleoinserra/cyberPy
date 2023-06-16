@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form action = "http://localhost:5000/check" method="post">
+     <select  id="cars" name="pm">
+{%
+    for x in lista.find()
+
+    %}
+
+
+      <option value={{x["_id"]}} >{{x}}</option>
+
+
+{% endfor%}
+
+ </select>
+    <input type="submit" value="Cancella"/>
+  </form>
+</body>
+</html>
